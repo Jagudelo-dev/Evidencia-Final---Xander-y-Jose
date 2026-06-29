@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto 40</title>
+  <style>
+    /* Estilos mínimos para visualización */
+    body { font-family: sans-serif; margin: 2em; }
+    .completado { text-decoration: line-through; opacity: 0.6; }
+  </style>
+</head>
+<body>
+  <h1>Reto 40</h1>
+
+  <label>Plan:
+    <select id="plan">
+      <option value="basico">Básico</option>
+      <option value="premium">Premium</option>
+    </select>
+  </label><br>
+  <label>Usuarios: <input type="number" id="usuarios" value="1"></label><br>
+  <label><input type="checkbox" id="soporte"> Soporte premium</label><br>
+  <label>Duración (meses):
+    <select id="duracion">
+      <option value="1">1</option>
+      <option value="3">3</option>
+      <option value="6">6</option>
+      <option value="12">12</option>
+    </select>
+  </label>
+  <div id="desglose"></div>
+  <p>Total: <span id="total"></span></p>
+  <script defer src="Reto40.js"></script>
+</body>
+</html>

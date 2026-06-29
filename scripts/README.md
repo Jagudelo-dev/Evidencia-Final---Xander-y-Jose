@@ -12,6 +12,8 @@ Los `README.md` de las carpetas `primeros-8-retos` y `segundos-8-retos` ya fuero
 |-----------------|-----------------------------------------------|
 | `readmes1.js`   | Generó los README de los retos 01 al 08       |
 | `readmes2.js`   | Generó los README de los retos 09 al 16       |
+| `raiz.js`       | Generó el README principal                    |
+|...              | ...                                           |
 +-----------------+-----------------------------------------------+
 Ambos fueron ejecutados con Node.js desde la raíz del proyecto:
 ```bash
