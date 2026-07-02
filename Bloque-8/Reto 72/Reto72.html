@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 72 - Panel Seguro de Consumo de APIs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="panel.js" defer></script>
+</head>
+<body>
+    <main class="contenedor-app">
+        <header>
+            <h1>Monitor Remoto de Servicios</h1>
+            <p class="badge-seguro">Defensa Asíncrona Activa</p>
+        </header>
+
+        <section class="controles-busqueda">
+            <input type="text" id="input-busqueda" placeholder="Buscar identificador de recurso..." aria-label="Buscador de recursos remotos">
+            <button id="btn-cancelar" style="background-color: #ef4444; color: white; display: none;">Cancelar Petición</button>
+        </section>
+
+        <section class="grid-servicios">
+            <div class="tarjeta-api" id="tarjeta-datos">
+                <h3>Respuesta API Principal</h3>
+                <div id="estado-api-1" class="cuerpo-estado">Esperando consulta...</div>
+            </div>
+            <div class="tarjeta-api" id="tarjeta-respaldo">
+                <h3>Métrica Respaldo Secundario</h3>
+                <div id="estado-api-2" class="cuerpo-estado">Esperando consulta...</div>
+            </div>
+        </section>
+
+        <section class="auditoria-rendimiento">
+            <h4>Registro de Auditoría de Red:</h4>
+            <pre id="consola-red">Monitoreando hilos concurrentes...</pre>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,3 @@
+body { font-family: monospace; background-color: #020617; color: #38bdf8; padding: 25px; }
+.contenedor-app { max-width: 800px; margin: 0 auto; background-color: #0f172a; padding: 20px; border-radius: 6px; border: 1px solid #1e293b; }
+pre { background-color: #020617; padding: 15px; color: #f1f5f9; border: 1px solid #334155; }

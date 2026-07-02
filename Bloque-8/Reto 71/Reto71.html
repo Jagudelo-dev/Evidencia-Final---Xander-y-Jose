@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 71 - Gestor Académico Offline-First</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" type="module" defer></script>
+</head>
+<body>
+    <main class="contenedor-app">
+        <header>
+            <h1>Gestor Académico</h1>
+            <p class="badge">Estrategia Offline-First & Inmutabilidad</p>
+        </header>
+
+        <section class="panel-controles">
+            <div class="grupo-formulario">
+                <h3>Registrar Estudiante</h3>
+                <input type="text" id="input-nombre" placeholder="Nombre completo" aria-label="Nombre del estudiante">
+                <input type="number" id="input-nota" placeholder="Nota (0.0 - 5.0)" step="0.1" min="0" max="5" aria-label="Nota del estudiante">
+                <button id="btn-guardar">Guardar Registro</button>
+            </div>
+            
+            <div class="grupo-acciones">
+                <h3>Herramientas JSON</h3>
+                <button id="btn-exportar" class="secundario">Exportar Copia de Seguridad</button>
+                <button id="btn-importar" class="secundario">Importar Copia de Seguridad</button>
+                <input type="file" id="archivo-importar" accept=".json" style="display: none;" aria-hidden="true">
+            </div>
+        </section>
+
+        <section class="pantalla-datos">
+            <div class="cabecera-tabla">
+                <h3>Listado de Estudiantes</h3>
+                <div id="metricas-rendimiento" class="metrica">Rendimiento: 0.00ms</div>
+            </div>
+            <table class="tabla-academica">
+                <thead>
+                    <tr>
+                        <th>Estudiante</th>
+                        <th>Nota Definitiva</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-cuerpo">
+                    <!-- Filas inyectadas dinámicamente de forma segura -->
+                </tbody>
+            </table>
+            <div class="paginacion" id="controles-paginacion">
+                <!-- Botones de paginación accesibles -->
+            </div>
+        </section>
+
+        <section class="consola-pruebas">
+            <h4>Suite de Pruebas Integrada:</h4>
+            <pre id="log-pruebas">Ejecutando aserciones académicas...</pre>
+        </section>
+    </main>
+</body>
+</html>
