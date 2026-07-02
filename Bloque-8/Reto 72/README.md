@@ -1,8 +1,40 @@
-# Reto 72 - Panel Seguro de Consumo de APIs
+# Reto 72 - Proyecto final: Dashboard modular
 
-## Análisis de Amenazas y Seguridad Dinámica
-* **Aislamiento de Claves Privadas:** Cumpliendo estrictamente con las directrices de seguridad, el diseño asíncronico no expone credenciales o *tokens* confidenciales dentro de los bloques expuestos en el código cliente.
-* **Mitigación de XSS Remoto:** Todos los contratos de datos provenientes de endpoints externos son sanitizados mediante expresiones de exclusión de caracteres `<>` antes de ser volcados al árbol de nodos estructurales del DOM.
+## 🎯 Objetivo
+Integrar varios componentes (gráficos, listas, formularios) en un dashboard unificado usando módulos ES.
 
-## Mecanismos de Tolerancia a Fallos
-* **Estrategia Stale-While-Revalidate:** Si un canal de datos sufre una caída por latencia o pérdida de conectividad, el interceptor rescata y despliega de inmediato la copia local indexada en el diccionario de memoria persistente, previniendo el bloqueo general de la aplicación.
+## 🛠️ Requisitos
+- Navegador web moderno (Chrome, Firefox, Edge).
+- [Visual Studio Code](https://code.visualstudio.com/) y Live Server (recomendado).
+
+## ▶️ Cómo ejecutar
+### 🌐 Usando Live Server
+1. Abre la carpeta en VS Code y lanza Live Server.
+2. El dashboard carga varios componentes simultáneamente.
+3. Interactúa con cada sección: gráficos, lista de tareas, formulario de configuración.
+
+## 🧠 Decisiones y proceso de solución
+- Estructuré el proyecto en módulos ES: datos, servicios, componentes y app principal.
+- Cada componente se renderiza en su propio contenedor.
+- Usé Promise.all para cargar datos iniciales en paralelo.
+- Implementé un sistema de eventos simple para comunicar componentes.
+
+## ⚠️ Dificultades encontradas
+- Coordinar tantos módulos fue un reto de organización.
+- Asegurar que los componentes no se pisaran el DOM entre sí.
+- La comunicación entre componentes sin un framework fue compleja; usé un patrón pub/sub simple.
+
+## ✅ Pruebas realizadas
+- [x] Todos los componentes se renderizan sin errores.
+- [x] Las interacciones en un componente no rompen otros.
+- [x] Los datos se cargan en paralelo correctamente.
+- [x] El dashboard se ve bien en diferentes tamaños de pantalla (responsive básico).
+
+## 📸 Evidencia
+*Captura de pantalla del navegador después de ejecutar el reto.*
+
+![Resultado](resultado.png)
+
+---
+
+> **Nota:** Este reto forma parte del manual de JavaScript 2026. Desarrollado siguiendo los criterios de aceptación.

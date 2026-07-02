@@ -4,17 +4,15 @@
 Usar every, some y find para validar pedidos y tomar una decisión automatizada.
 
 ## 🛠️ Requisitos
-- Tener [Node.js](https://nodejs.org) instalado (versión LTS recomendada).
+- [Node.js](https://nodejs.org) instalado (versión LTS recomendada).
 - Terminal o línea de comandos (Git Bash, CMD, PowerShell, Bash).
 
 ## ▶️ Cómo ejecutar
-Abre una terminal en la raíz del repositorio.
-Ejecuta:
+Abre una terminal en la raíz del repositorio y ejecuta:
 ```bash
 cd bloque-3/Reto\ 24
 node Reto24.js
 ```
-Observa los resultados en consola.
 
 ## 🧠 Decisiones y proceso de solución
 - every verifica que todas las direcciones estén completas.
@@ -34,11 +32,10 @@ Observa los resultados en consola.
 - [x] La decisión final es reproducible.
 
 ## 📸 Evidencia
-*Reemplaza esta línea con la captura de pantalla de la terminal después de ejecutar el código.*  
-Salida de terminal con resultado de auditoría.
+*Captura de pantalla de la terminal después de ejecutar el código.*
 
 ![Resultado](resultado.png)
 
 ---
 
-> **Nota:** Este reto forma parte del manual de JavaScript 2026. Fue desarrollado siguiendo las especificaciones y criterios de aceptación.
+> **Nota:** Este reto forma parte del manual de JavaScript 2026. Desarrollado siguiendo los criterios de aceptación.

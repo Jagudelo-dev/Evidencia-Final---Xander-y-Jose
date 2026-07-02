@@ -4,17 +4,15 @@
 Combinar estructuras condicionales y ciclos para procesar un lote de datos.
 
 ## 🛠️ Requisitos
-- Tener [Node.js](https://nodejs.org) instalado (versión LTS recomendada).
+- [Node.js](https://nodejs.org) instalado (versión LTS recomendada).
 - Terminal o línea de comandos (Git Bash, CMD, PowerShell, Bash).
 
 ## ▶️ Cómo ejecutar
-Abre una terminal en la raíz del repositorio.
-Ejecuta:
+Abre una terminal en la raíz del repositorio y ejecuta:
 ```bash
 cd bloque-3/Reto\ 22
 node Reto22.js
 ```
-Observa los resultados en consola.
 
 ## 🧠 Decisiones y proceso de solución
 - Separé las validaciones de las operaciones para mantener el código limpio.
@@ -32,11 +30,10 @@ Observa los resultados en consola.
 - [x] No se modifica el array original.
 
 ## 📸 Evidencia
-*Reemplaza esta línea con la captura de pantalla de la terminal después de ejecutar el código.*  
-Terminal con los resultados del procesamiento.
+*Captura de pantalla de la terminal después de ejecutar el código.*
 
 ![Resultado](resultado.png)
 
 ---
 
-> **Nota:** Este reto forma parte del manual de JavaScript 2026. Fue desarrollado siguiendo las especificaciones y criterios de aceptación.
+> **Nota:** Este reto forma parte del manual de JavaScript 2026. Desarrollado siguiendo los criterios de aceptación.

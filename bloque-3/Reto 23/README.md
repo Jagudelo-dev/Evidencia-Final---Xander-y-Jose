@@ -4,17 +4,15 @@
 Usar reduce, find y sort para calcular ingresos, gastos, balance y agrupar por categoría.
 
 ## 🛠️ Requisitos
-- Tener [Node.js](https://nodejs.org) instalado (versión LTS recomendada).
+- [Node.js](https://nodejs.org) instalado (versión LTS recomendada).
 - Terminal o línea de comandos (Git Bash, CMD, PowerShell, Bash).
 
 ## ▶️ Cómo ejecutar
-Abre una terminal en la raíz del repositorio.
-Ejecuta:
+Abre una terminal en la raíz del repositorio y ejecuta:
 ```bash
 cd bloque-3/Reto\ 23
 node Reto23.js
 ```
-Observa los resultados en consola.
 
 ## 🧠 Decisiones y proceso de solución
 - Separé ingresos y gastos con filter antes de aplicar reduce.
@@ -34,11 +32,10 @@ Observa los resultados en consola.
 - [x] El array original no se modifica al ordenar.
 
 ## 📸 Evidencia
-*Reemplaza esta línea con la captura de pantalla de la terminal después de ejecutar el código.*  
-Salida de terminal con resumen financiero, top 3 y porcentajes.
+*Captura de pantalla de la terminal después de ejecutar el código.*
 
 ![Resultado](resultado.png)
 
 ---
 
-> **Nota:** Este reto forma parte del manual de JavaScript 2026. Fue desarrollado siguiendo las especificaciones y criterios de aceptación.
+> **Nota:** Este reto forma parte del manual de JavaScript 2026. Desarrollado siguiendo los criterios de aceptación.
